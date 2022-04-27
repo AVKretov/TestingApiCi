@@ -20,7 +20,7 @@ class MobileBankApiTest {
                 .get("/demo/accounts")
                 // Проверки
                 .then()
-                .statusCode(201);
+                .statusCode(200);
     }
 
     @Test
@@ -34,7 +34,7 @@ class MobileBankApiTest {
                 .get("/demo/accounts")
                 // Проверки
                 .then()
-                .contentType(ContentType.XML);
+                .contentType(ContentType.JSON);
     }
 
     @Test
